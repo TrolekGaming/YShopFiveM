@@ -27,7 +27,7 @@ local function SendAPIRequest(path, cb, body)
     headers = {}
     headers["User-Agent"] = "YShopFiveM/"..GetResourceMetadata(GetCurrentResourceName(), "version")
     headers["x-api-key"] = Config.ApiKey
-    headers["x-app-platform"] = "platform/minecraft-java"
+    headers["x-app-platform"] = "platform/fivem"
     headers["x-app-platform-version"] = ""..GetGameBuildNumber()
     headers["x-app-platform-engine"] = GetConvar("sv_hostname", "FiveM Server")
     printDebug("Sending "..method.." to url: "..url)
